@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GestureSample.ThiefPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="playerList" ItemSelected="playerList_ItemSelected">
+                <ListView.Header>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Player" HorizontalOptions="CenterAndExpand" FontSize="Large"/>
+                    </StackLayout>
+                </ListView.Header>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell x:Name="customCell" Height="30" >
+                            <StackLayout Padding="5" Orientation="Horizontal">
+                                <Label Text="{Binding Name}"  TextColor="{Binding XamColor}" FontSize="Large" HorizontalOptions="CenterAndExpand" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand">
+                <Button Text="Delete Resource" BackgroundColor="DodgerBlue" TextColor="White" Clicked="WheatButton_Clicked"></Button>
+                <Label x:Name="wheatLabel" Text="Wheat" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <Button Text="Delete Resource" BackgroundColor="DodgerBlue" TextColor="White" Clicked="SheepButton_Clicked"></Button>
+                <Label x:Name="sheepLabel" Text="Sheep" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <Button Text="Delete Resource" BackgroundColor="DodgerBlue" TextColor="White" Clicked="WoodButton_Clicked"></Button>
+                <Label x:Name="woodLabel" Text="Wood" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <Button Text="Delete Resource" BackgroundColor="DodgerBlue" TextColor="White" Clicked="BrickButton_Clicked"></Button>
+                <Label x:Name="brickLabel" Text="Brick" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <Button Text="Delete Resource" BackgroundColor="DodgerBlue" TextColor="White" Clicked="RockButton_Clicked"></Button>
+                <Label x:Name="rockLabel" Text="Rock" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"></Label>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

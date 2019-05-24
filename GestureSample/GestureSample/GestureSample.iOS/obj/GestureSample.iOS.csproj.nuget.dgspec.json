@@ -1,0 +1,155 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\javi_\\Downloads\\GestureSample\\GestureSample\\GestureSample.iOS\\GestureSample.iOS.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\javi_\\Downloads\\GestureSample\\GestureSample\\GestureSample.iOS\\GestureSample.iOS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\javi_\\Downloads\\GestureSample\\GestureSample\\GestureSample.iOS\\GestureSample.iOS.csproj",
+        "projectName": "GestureSample.iOS",
+        "projectPath": "C:\\Users\\javi_\\Downloads\\GestureSample\\GestureSample\\GestureSample.iOS\\GestureSample.iOS.csproj",
+        "packagesPath": "C:\\Users\\javi_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\javi_\\Downloads\\GestureSample\\GestureSample\\GestureSample.iOS\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\ProgramData\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\javi_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "xamarinios10"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "xamarinios10": {
+            "projectReferences": {
+              "C:\\Users\\javi_\\Downloads\\GestureSample\\GestureSample\\GestureSample\\GestureSample.csproj": {
+                "projectPath": "C:\\Users\\javi_\\Downloads\\GestureSample\\GestureSample\\GestureSample\\GestureSample.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "xamarinios10": {
+          "dependencies": {
+            "Rg.Plugins.Popup": {
+              "target": "Package",
+              "version": "[1.1.4.168, )"
+            },
+            "SkiaSharp": {
+              "target": "Package",
+              "version": "[1.60.0, )"
+            },
+            "SkiaSharp.Views.Forms": {
+              "target": "Package",
+              "version": "[1.60.0, )"
+            },
+            "Vapolia.XamarinFormsGesture": {
+              "target": "Package",
+              "version": "[2.0.11, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[3.0.0.446417, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\javi_\\Downloads\\GestureSample\\GestureSample\\GestureSample\\GestureSample.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\javi_\\Downloads\\GestureSample\\GestureSample\\GestureSample\\GestureSample.csproj",
+        "projectName": "GestureSample",
+        "projectPath": "C:\\Users\\javi_\\Downloads\\GestureSample\\GestureSample\\GestureSample\\GestureSample.csproj",
+        "packagesPath": "C:\\Users\\javi_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\javi_\\Downloads\\GestureSample\\GestureSample\\GestureSample\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\ProgramData\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\javi_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Rg.Plugins.Popup": {
+              "target": "Package",
+              "version": "[1.1.4.168, )"
+            },
+            "SkiaSharp": {
+              "target": "Package",
+              "version": "[1.60.0, )"
+            },
+            "SkiaSharp.Views.Forms": {
+              "target": "Package",
+              "version": "[1.60.0, )"
+            },
+            "Vapolia.XamarinFormsGesture": {
+              "target": "Package",
+              "version": "[2.0.11, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[3.0.0.446417, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

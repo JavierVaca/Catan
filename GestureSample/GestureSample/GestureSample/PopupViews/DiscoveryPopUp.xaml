@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<popup:PopupPage 
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:popup="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="GestureSample.DiscoveryPopUp">
+    <Frame Margin="60" HeightRequest="200" Padding="10" BackgroundColor="Transparent" BorderColor="Transparent">
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="200"> 
+            <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center" Padding="0" Margin="0">
+                <Button x:Name="WheatButton" Text="Wheat" Clicked="WheatButton_Clicked"/>
+                <Button x:Name="WoodButton" Text="Wood" Clicked="WoodButton_Clicked"/>
+                <Button x:Name="RockButton" Text="Rock" Clicked="RockButton_Clicked"/>
+                <Button x:Name="SheepButton" Text="Sheep" Clicked="SheepButton_Clicked"/>
+                <Button x:Name="BrickButton" Text="Brick" Clicked="BrickButton_Clicked"/>
+            </StackLayout>
+            <Button x:Name="SelectButton" Text="Select"/>
+            <Label x:Name="MessageLabel" HorizontalOptions="Center" BackgroundColor="White"/>
+        </StackLayout>
+    </Frame>
+</popup:PopupPage>
+
+

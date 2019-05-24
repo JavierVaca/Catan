@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DemoApp"
+              xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
+             xmlns:ui="clr-namespace:Vapolia.Lib.Ui;assembly=XamarinFormsGesture"
+             x:Class="GestureSample.MainPage"
+             Title="Board">
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Market" Icon="Dollar.png" Clicked="MarketButton_Clicked"/>
+        <ToolbarItem Text="Build" Icon="hammer.png"  Clicked="BuildButton_Clicked"/>
+        <ToolbarItem Text="Cards" Icon="cards.png"  Clicked="CardButton_Clicked"/>
+        <ToolbarItem Text="Undo" Icon="refresh.png" Clicked="Undo_Clicked"/>
+    </ContentPage.ToolbarItems>
+
+    <StackLayout Spacing="10" BackgroundColor="LightSkyBlue">
+        <Label x:Name="PLayerName" HorizontalOptions="CenterAndExpand"/>
+        <!-- ios: gestures does not work directly on a forms label -->
+        <Grid BackgroundColor="LightSkyBlue" VerticalOptions="FillAndExpand">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            
+            
+            
+            <skia:SKCanvasView x:Name="canvasView" PaintSurface="OnCanvasViewPaintSurface" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0" BackgroundColor="LightSkyBlue" 
+                               ui:Gesture.TapCommand2="{Binding TapCommand}" IsEnabled="True" InputTransparent="False">
+                
+            </skia:SKCanvasView>
+
+            <Button Text="Finish Turn" Grid.Column="1" Grid.Row="3" Grid.RowSpan="4" TextColor="White" BackgroundColor="DodgerBlue" Clicked="TurnButton_Clicked"/>
+            <Label Text="Resources" Grid.Column="0" Grid.Row="1" HorizontalOptions="StartAndExpand" FontAttributes="Bold"/>
+            <Label x:Name="wheatLabel" Text="Wheat: 0" Grid.Column="0" Grid.Row="2" HorizontalOptions="StartAndExpand"/>
+            <Label x:Name="brickLabel" Text="Brick: 0" Grid.Column="0" Grid.Row="3" HorizontalOptions="StartAndExpand"/>
+            <Label x:Name="sheepLabel" Text="Sheep: 0" Grid.Column="0" Grid.Row="4" HorizontalOptions="StartAndExpand"/>
+            <Label x:Name="rockLabel" Text="Rock: 0" Grid.Column="0" Grid.Row="5" HorizontalOptions="StartAndExpand"/>
+            <Label x:Name="woodLabel" Text="Wood: 0" Grid.Column="0" Grid.Row="6" HorizontalOptions="StartAndExpand"/>
+
+            <Grid Grid.Column="2" Grid.Row="1" Grid.RowSpan="6">
+                
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                
+                <Image x:Name="DiceImage1" Grid.Column="0" Grid.Row="0"  HorizontalOptions="FillAndExpand"/>
+                <Image x:Name="DiceImage2" Grid.Column="1" Grid.Row="0"  HorizontalOptions="FillAndExpand"/>
+                <Button x:Name="rollButton" Text="Roll Dice"  Grid.Column="0" 
+                        Grid.ColumnSpan="2" Grid.Row="1" TextColor="White" 
+                        BackgroundColor="DodgerBlue" Clicked="RollButton_Clicked"/>
+            </Grid>
+            
+
+        </Grid>
+
+    </StackLayout>
+
+</ContentPage>

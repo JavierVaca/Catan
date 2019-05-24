@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GestureSample.MarketPage">
+    <ContentPage.Content>
+        <Grid BackgroundColor="LightSkyBlue">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            <Label x:Name="currentPlayer" VerticalOptions="CenterAndExpand" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="6"
+                   HorizontalOptions="CenterAndExpand" FontSize="Large"/>
+            
+            <ListView x:Name="playerList" ItemSelected="playerList_ItemSelected" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="6">
+                <ListView.Header>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Select a Player" HorizontalOptions="CenterAndExpand" FontSize="Large"/>
+                    </StackLayout>
+                </ListView.Header>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell x:Name="customCell" Height="30" >
+                            <StackLayout Padding="5" Orientation="Horizontal">
+                                <Label Text="{Binding Name}"  TextColor="{Binding XamColor}" FontSize="Large" HorizontalOptions="CenterAndExpand" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+          
+            <Label Text="Give" FontSize="Large" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" />
+                  
+            <Button Text="Remove " BackgroundColor="DodgerBlue" Grid.Column="0" Grid.Row="3" TextColor="White"  FontSize="Small" Clicked="RemoveWheatButton_Clicked"></Button>
+            <Button Text="Add " BackgroundColor="DodgerBlue" Grid.Column="1" Grid.Row="3" TextColor="White" FontSize="Small" Clicked="AddWheatButton_Clicked"></Button>
+            <Label x:Name="wheatLabel" Text="Wheat: 0" HorizontalOptions="CenterAndExpand" Grid.Column="2" Grid.Row="3" VerticalOptions="CenterAndExpand"></Label>
+
+            <Button Text="Remove " BackgroundColor="DodgerBlue" Grid.Column="0" Grid.Row="4" TextColor="White" FontSize="Small" Clicked="RemoveSheepButton_Clicked"></Button>
+            <Button Text="Add " BackgroundColor="DodgerBlue" Grid.Column="1" Grid.Row="4" TextColor="White" FontSize="Small" Clicked="AddSheepButton_Clicked"></Button>
+            <Label x:Name="sheepLabel" Text="Sheep: 0" Grid.Column="2" Grid.Row="4" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"></Label>
+            
+            <Button Text="Remove " BackgroundColor="DodgerBlue" Grid.Column="0" Grid.Row="5" TextColor="White" FontSize="Small" Clicked="RemoveWoodButton_Clicked"></Button>
+            <Button Text="Add " BackgroundColor="DodgerBlue" Grid.Column="1" Grid.Row="5"  TextColor="White" FontSize="Small" Clicked="AddWoodButton_Clicked"></Button>
+            <Label x:Name="woodLabel" Text="Wood: 0" HorizontalOptions="CenterAndExpand" Grid.Column="2" Grid.Row="5"  VerticalOptions="CenterAndExpand"></Label>
+            
+            <Button Text="Remove " BackgroundColor="DodgerBlue" Grid.Column="0" Grid.Row="6"  TextColor="White" FontSize="Small" Clicked="RemoveBrickButton_Clicked"></Button>
+            <Button Text="Add " BackgroundColor="DodgerBlue" Grid.Column="1" Grid.Row="6"  TextColor="White" FontSize="Small" Clicked="AddBrickButton_Clicked"></Button>
+            <Label x:Name="brickLabel" Text="Brick: 0" Grid.Column="2" Grid.Row="6"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"></Label>
+            
+            <Button Text="Remove " BackgroundColor="DodgerBlue" Grid.Column="0" Grid.Row="7"  TextColor="White" FontSize="Small" Clicked="RemoveRockButton_Clicked"></Button>
+            <Button Text="Add " BackgroundColor="DodgerBlue" Grid.Column="1" Grid.Row="7"  TextColor="White" FontSize="Small" Clicked="AddRockButton_Clicked"></Button>
+            <Label x:Name="rockLabel" Text="Rock: 0" HorizontalOptions="CenterAndExpand" Grid.Column="2" Grid.Row="7"  VerticalOptions="CenterAndExpand"></Label>
+            
+            <Label Text="Take" FontSize="Large" Grid.Column="3" Grid.Row="2" Grid.ColumnSpan="3"/>
+
+            <Button Text="Remove " BackgroundColor="DodgerBlue" Grid.Column="5" Grid.Row="3" TextColor="White" FontSize="Small" Clicked="RemoveWheatButton2_Clicked"></Button>
+            <Button Text="Add " BackgroundColor="DodgerBlue" Grid.Column="4" Grid.Row="3" TextColor="White" FontSize="Small" Clicked="AddWheatButton2_Clicked"></Button>
+            <Label x:Name="wheatLabel2" Text="Wheat: 0" HorizontalOptions="CenterAndExpand" Grid.Column="3" Grid.Row="3"  VerticalOptions="CenterAndExpand"></Label>
+
+            <Button Text="Remove " BackgroundColor="DodgerBlue" Grid.Column="5" Grid.Row="4"  TextColor="White" FontSize="Small" Clicked="RemoveSheepButton2_Clicked"></Button>
+            <Button Text="Add " BackgroundColor="DodgerBlue" Grid.Column="4" Grid.Row="4"  TextColor="White" FontSize="Small" Clicked="AddSheepButton2_Clicked"></Button>
+            <Label x:Name="sheepLabel2" Text="Sheep: 0" HorizontalOptions="CenterAndExpand" Grid.Column="3" Grid.Row="4"  VerticalOptions="CenterAndExpand"></Label>
+
+            <Button Text="Remove " BackgroundColor="DodgerBlue" Grid.Column="5" Grid.Row="5"  TextColor="White" FontSize="Small" Clicked="RemoveWoodButton2_Clicked"></Button>
+            <Button Text="Add " BackgroundColor="DodgerBlue" Grid.Column="4" Grid.Row="5"  TextColor="White" FontSize="Small" Clicked="AddWoodButton2_Clicked"></Button>
+            <Label x:Name="woodLabel2" Text="Wood: 0" Grid.Column="3" Grid.Row="5"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"></Label>
+
+            <Button Text="Remove " BackgroundColor="DodgerBlue" Grid.Column="5" Grid.Row="6"  TextColor="White" FontSize="Small" Clicked="RemoveBrickButton2_Clicked"></Button>
+            <Button Text="Add " BackgroundColor="DodgerBlue" Grid.Column="4" Grid.Row="6"  TextColor="White" FontSize="Small" Clicked="AddBrickButton2_Clicked"></Button>
+            <Label x:Name="brickLabel2" Text="Brick: 0" Grid.Column="3" Grid.Row="6"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"></Label>
+
+            <Button Text="Remove " BackgroundColor="DodgerBlue" Grid.Column="5" Grid.Row="7"  TextColor="White" FontSize="Small" Clicked="RemoveRockButton2_Clicked"></Button>
+            <Button Text="Add " BackgroundColor="DodgerBlue" Grid.Column="4" Grid.Row="7"  TextColor="White" FontSize="Small" Clicked="AddRockButton2_Clicked"></Button>
+            <Label x:Name="rockLabel2" Text="Rock: 0" Grid.Column="3" Grid.Row="7"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"></Label>
+
+            <Button x:Name="TradeButton" Text="Trade" BackgroundColor="DodgerBlue" TextColor="White" Clicked="TradeButton_Clicked" 
+                    Grid.Column="1" Grid.ColumnSpan="4" Grid.Row="8"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

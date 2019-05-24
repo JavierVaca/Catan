@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GestureSample.BuildPage"
+             Title="Build">
+    
+    <ContentPage.Content>
+        <ScrollView>
+      
+        <StackLayout Orientation="Vertical" Margin="10" >
+
+            <StackLayout Orientation="Horizontal">
+                <Image Source="path.png" HeightRequest = "150" WidthRequest="150"/>
+                <Label FontSize="Large" VerticalOptions="CenterAndExpand">Cost: 1 Wood, 1 Brick</Label>
+                <Button  x:Name="PathButton" HorizontalOptions="EndAndExpand" BackgroundColor="Gray" IsEnabled="false" TextColor="White"  Text="Buy" Clicked="PathButton_Clicked"/>
+            </StackLayout>
+
+            <BoxView Color="Gray" HeightRequest="1" Opacity="0.5"/>
+
+            <StackLayout Orientation="Horizontal">
+                <Image Source="village.png" HeightRequest = "150" WidthRequest="150"/>
+                <Label FontSize="Large" VerticalOptions="CenterAndExpand" >Cost: 1 Wood, 1 Brick, 1 Wheat, 1 Sheep</Label>
+                <Button  x:Name="VillageButton" HorizontalOptions="EndAndExpand" BackgroundColor="Gray" IsEnabled="false" TextColor="White" Text="Buy" Clicked="VillageButton_Clicked"/>
+            </StackLayout>
+
+            <BoxView Color="Gray" HeightRequest="1" Opacity="0.5"/>
+
+            <StackLayout Orientation="Horizontal">
+                <Image Source="town.png" HeightRequest = "150" WidthRequest="150"/>
+                <Label FontSize="Large" VerticalOptions="CenterAndExpand" >Cost: 3 Rock, 2 Wheat </Label>
+                <Button  x:Name="TownButton" HorizontalOptions="EndAndExpand" BackgroundColor="Gray" IsEnabled="false" TextColor="White" Text="Buy" Clicked="TownButton_Clicked"/>
+            </StackLayout>
+
+            <BoxView Color="Gray" HeightRequest="1" Opacity="0.5"/>
+
+            <StackLayout Orientation="Horizontal">
+                <Image Source="gears.png" HeightRequest = "150" WidthRequest="150"/>
+                <Label FontSize="Large" VerticalOptions="CenterAndExpand" >Cost: 1 Rock, 1 Wheat, 1 Sheep</Label>
+                <Button  x:Name="DevelopmentButton" HorizontalOptions="EndAndExpand"  BackgroundColor="Gray" IsEnabled="false" TextColor="White" Text="Buy" Clicked="DevelopmentButton_Clicked"/>
+            </StackLayout>
+        
+        </StackLayout>
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

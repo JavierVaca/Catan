@@ -1,0 +1,9 @@
+C:\Users\javier\documents\Xamarin\GestureSample\GestureSample\GestureSample\bin\Debug\netstandard2.0\GestureSample.deps.json
+C:\Users\javier\documents\Xamarin\GestureSample\GestureSample\GestureSample\bin\Debug\netstandard2.0\GestureSample.dll
+C:\Users\javier\documents\Xamarin\GestureSample\GestureSample\GestureSample\bin\Debug\netstandard2.0\GestureSample.pdb
+C:\Users\javier\documents\Xamarin\GestureSample\GestureSample\GestureSample\obj\Debug\netstandard2.0\GestureSample.csproj.CoreCompileInputs.cache
+C:\Users\javier\documents\Xamarin\GestureSample\GestureSample\GestureSample\obj\Debug\netstandard2.0\GestureSample.AssemblyInfoInputs.cache
+C:\Users\javier\documents\Xamarin\GestureSample\GestureSample\GestureSample\obj\Debug\netstandard2.0\GestureSample.AssemblyInfo.cs
+C:\Users\javier\documents\Xamarin\GestureSample\GestureSample\GestureSample\obj\Debug\netstandard2.0\GestureSample.dll
+C:\Users\javier\documents\Xamarin\GestureSample\GestureSample\GestureSample\obj\Debug\netstandard2.0\GestureSample.pdb
+C:\Users\javier\documents\Xamarin\GestureSample\GestureSample\GestureSample\obj\Debug\netstandard2.0\GestureSample.csprojAssemblyReference.cache
